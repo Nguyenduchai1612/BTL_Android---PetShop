@@ -89,7 +89,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Shop - Pet House"
+        android:text=" Shop - Pet House "
         android:textColor="@color/color4"
         android:textSize="40sp"
         android:fontFamily="cursive"

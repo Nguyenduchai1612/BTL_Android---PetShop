@@ -48,8 +48,11 @@ public class HomeActivity extends AppCompatActivity implements NumberDialog.inte
     private void functionBottom() {
         bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
             int id = item.getItemId();
-            if (id == R.id.cart_nav)
+            if (id == R.id.cart_nav) {
+                addData();
+                setadapter();
                 startActivity(new Intent(HomeActivity.this, MyCart.class));
+            }
             if (id == R.id.profile_nav)
                 startActivity(new Intent(HomeActivity.this, AdminActivity.class));
             if (id == R.id.exit_nav) {
